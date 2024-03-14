@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="work.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 10px;
+    }
+    
+    .grid-item {
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .grid-item img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.5s ease-in-out;
+    }
+    
+    .grid-item:hover img {
+      transform: scale(1.1);
+    }
+    
+    .grid-item .content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+    
+    .grid-item:hover .content {
+      opacity: 1;
+    }
+    
+    .grid-item .content p {
+      padding: 20px;
+      text-align: center;
+    }
+    </style>
+<body>
+    <section id="top-image"> 
+        <div>
+            <img src="./assets/homepage.jpg" alt="hompage pic" class="homepage-pic">
+        </div>
+    </section>
+    <nav id="desktop-nav">
+        <div class="logo">TANYA</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="./about.html">About</a></li>
+                <!-- <li><a href="./work.html">Experience</a></li> -->
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- <nav id="hamburger-nav">
+        <div class="logo">NAME</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+             </div>
+             <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+             </div>
+        </div>
+    </nav> -->
+    <section>
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="./assets/site1.pdf" target="_blank">
+                    <img src="./assets/1wallpaper.png" alt="Image 1">
+                    <div class="content">
+                      <p>1</p>
+                    </div>
+                  </a>
+            </div>
+            <div class="grid-item">
+                <a href="./assets/site2.pdf" target="_blank">
+                    <img src="./assets/2wallpaper.png" alt="Image 1">
+                    <div class="content">
+                      <p>2</p>
+                    </div>
+                  </a>
+            </div>
+            <div class="grid-item">
+                <a href="./assets/site3.pdf" target="_blank">
+                    <img src="./assets/3wallpaper.png" alt="Image 1">
+                    <div class="content">
+                      <p>3</p>
+                    </div>
+                  </a>
+            </div>
+          </div>
+    </section>
+    <!-- <section id="contact">
+        <p class="section__text__p1">Get In Thouch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="social-links">
+            <a id="behance" href="https://www.behance.net/tan90"><i class="fa-brands fa-behance"></i></a>
+            <a id="linke" href="https://www.linkedin.com/in/tanya-prajapati-128837269/"><i class="fab fa-linkedin-in"></i></a>
+            <a id="insta" href="https://www.instagram.com/_tanyaprajapati_/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <a id="toggle-arrow" href="./index.html"><i class="fa-solid fa-arrow-up"></i></a>
+    </section> -->
+    <footer>
+        <p>Copyrigth &#169; 2024. TANYA All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

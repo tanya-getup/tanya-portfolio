@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 10px;
+    }
+    
+    .grid-item {
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .grid-item img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.5s ease-in-out;
+    }
+    
+    .grid-item:hover img {
+      transform: scale(1.1);
+    }
+    
+    .grid-item .content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+    
+    .grid-item:hover .content {
+      opacity: 1;
+    }
+    
+    .grid-item .content p {
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer{
+    height: 5vh;
+    margin: 0 1rem;
+    margin-top: 70rem;
+    }
+
+    footer p{
+    text-align: center;
+    }
+</style>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">TANYA</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <!-- <li><a href="./work.html">Experience</a></li> -->
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="./assets/site1.pdf" target="_blank">
+                    <img src="./assets/1wallpaper.png" alt="Image 1">
+                    <div class="content">
+                      <p>1</p>
+                    </div>
+                  </a>
+            </div>
+            <div class="grid-item">
+                <a href="./assets/site2.pdf" target="_blank">
+                    <img src="./assets/2wallpaper.png" alt="Image 1">
+                    <div class="content">
+                      <p>2</p>
+                    </div>
+                  </a>
+            </div>
+            <div class="grid-item">
+                <a href="./assets/site3.pdf" target="_blank">
+                    <img src="./assets/3wallpaper.png" alt="Image 1">
+                    <div class="content">
+                      <p>3</p>
+                    </div>
+                  </a>
+            </div>
+          </div>
+    </section>
+    <footer>
+        <p>Copyrigth &#169; 2024. TANYA  All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
